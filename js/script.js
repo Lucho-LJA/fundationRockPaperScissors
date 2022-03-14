@@ -11,7 +11,26 @@ function computerPlay(){
             return 'Rock';
     }
 }
-
-let computerOption;
-computerOption=computerPlay();
-console.log(computerOption);
+function playRound(playerSelection, computerSelection) {
+    if (playerSelection.toUpperCase()===computerSelection.toUpperCase()){
+        return `Game tied. Both chose ${computerSelection.toUpperCase()}`;
+    }else if (playerSelection.toUpperCase()=='ROCK' && computerSelection.toUpperCase()=='PAPER'){
+        return `You Lose! ${computerSelection.toUpperCase()} beats ${playerSelection.toUpperCase()}`;
+    }else if (playerSelection.toUpperCase()=='PAPER' && computerSelection.toUpperCase()=='SCISSORS'){
+        return `You Lose! ${computerSelection.toUpperCase()} beats ${playerSelection.toUpperCase()}`;
+    }else if (playerSelection.toUpperCase()=='SCISSORS' && computerSelection.toUpperCase()=='ROCK'){
+        return `You Lose! ${computerSelection.toUpperCase()} beats ${playerSelection.toUpperCase()}`;
+    }else if (playerSelection.toUpperCase()=='ROCK' && computerSelection.toUpperCase()=='SCISSORS'){
+        return `You Win! ${playerSelection.toUpperCase()} beats ${computerSelection.toUpperCase()}`;
+    }else if (playerSelection.toUpperCase()=='PAPER' && computerSelection.toUpperCase()=='ROCK'){
+        return `You Win! ${playerSelection.toUpperCase()} beats ${computerSelection.toUpperCase()}`;
+    }else if (playerSelection.toUpperCase()=='SCISSORS' && computerSelection.toUpperCase()=='PAPER'){
+        return `You Win! ${playerSelection.toUpperCase()} beats ${computerSelection.toUpperCase()}`;
+    }else{
+        return 'Invalid value'
+    }
+  }
+  
+  const playerSelection = "SCISsORS";
+  const computerSelection = computerPlay();
+  console.log(playRound(playerSelection, computerSelection));
