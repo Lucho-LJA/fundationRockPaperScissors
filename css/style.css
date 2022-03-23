@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+.img-options{
+    display: flex;
+
+}
+#final-results{
+    display: flex;
+}
+.final-result{
+    display: flex;
+    flex-direction: column;
+}
