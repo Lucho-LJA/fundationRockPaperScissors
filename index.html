@@ -4,10 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/script.js" defer></script>
     <title>Rock Paper Scissors by console</title>
 
 </head>
 <body>
-    <script src="./js/script.js"></script>
+    <div id="header">
+        <h1 id="title">Game of Rock Paper or Scissors</h1>
+        <p class="text-info">Select a option: </p>
+    </div>
+    <div class="img-options">
+        <div class="img-option">
+            <input id="button-rock" type="image" src=".\img\rock.jpg" name="button-rock" alt="Picture of rock"/>
+            <p>ROCK</p>
+
+        </div>
+        <div class="img-option">
+            <input id="button-paper" type="image" src=".\img\paper.jpg" name="button-paper" alt="Picture of paper"/>
+            <p>PAPER</p>
+
+        </div>
+        <div class="img-option">
+            <input id="button-scissors" type="image" src=".\img\scissors.jpg" name="button-scissors" alt="Picture of scissors"/>
+            <p>SCISSORS</p>
+        </div>
+    </div>
+    <div id="info">
+        <p class="text-info">Current game: </p>
+        <p id="current-result">Chose a option</p>
+        <p class="text-info">Final result:</p>
+        <div id="final-result">
+            <div class="final-result-parcial">
+                <p id="text-info">Won games:</p>
+                <p id="text-result">Keep playing</p>
+            </div>
+            <div class="final-result-parcial">
+                <p id="text-info">Lost games:</p>
+                <p id="text-result">Keep playing</p>
+            </div>
+            <div class="final-result-parcial">
+                <p id="text-info">Tied games:</p>
+                <p id="text-result">Keep playing</p>
+            </div>
+        </div>
+        <p id="see-result">Keep playing</p>
+    </div>
+
+    
 </body>
 </html>
