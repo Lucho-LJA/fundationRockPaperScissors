@@ -81,16 +81,20 @@ body {
     background-color: rgb(140, 220, 240);
     margin: 0;
 }
+
+.final-result .text-info{
+    outline-style: solid;
+    outline-color: blue;
+    margin:0;
+    padding: 0;
+}
 #general-result{
     background-color: darkgray;
     text-align: center;
     font-weight: bolder;
     font-size: larger;
     color: aliceblue;
-}
-.final-result .text-info{
-    outline-style: solid;
-    outline-color: blue;
-    margin:0;
+    margin: 0;
     padding: 0;
+    border-style: none;
 }
